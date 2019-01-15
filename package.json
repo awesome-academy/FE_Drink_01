@@ -1,0 +1,25 @@
+{
+  "name": "fe_drink_01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linhnhn1/FE_Drink_01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linhnhn1/FE_Drink_01/issues"
+  },
+  "homepage": "https://github.com/linhnhn1/FE_Drink_01#readme",
+  "dependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.16.0"
+  },
+  "devDependencies": {}
+}
