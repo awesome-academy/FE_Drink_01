@@ -1,0 +1,324 @@
+html
+	include ../include/head
+	body
+		header#header
+			.header__menutop
+				.header__menutop__content
+					ul
+						li
+							a(href='#') Tài khoản của tôi
+							a -
+						li
+							a(href='#') Trạng thái đơn hàng 
+							a -
+						li
+							a(href='bill.html') Danh sách đơn hàng
+							a -
+						li
+							a(href='shoppingcart.html') Giỏ hàng 
+							a -
+						li
+							a(href='login.html') Đăng nhập 
+							a - 
+						li
+							a(href='register.html') Đăng ký
+			nav.navbar.navbar-expand-md.navbar-dark#header-menu
+				.container
+					a.navbar-brand(href='#')
+						img(src='../image/logo.jpg')
+					button.navbar-toggler(type='button' data-toggle='collapse' data-target='#myNavbar')
+						span.navbar-toggler-icon
+					#myNavbar.collapse.navbar-collapse
+						ul.nav.navbar-nav
+							li.nav-item
+								a.nav-link(href='index.html') TRANG CHỦ
+							li.nav-item#dropmenu
+								a.nav-link(href='redwine.html') RƯỢU VANG ĐỎ
+								div
+									div.nav-column
+										h3 RƯỢU NGOẠI
+										ul
+											li
+												a Rượu Chivas
+											li
+												a Hàng độc - Rượu độc đáo
+											li
+												a Johnnie Walker
+											li
+												a Rượu Whisky
+											li
+												a Rượu Remy Martin
+											li
+												a Rượu Glenmorangie
+									div.nav-column
+										h3 RƯỢU VANG
+										ul
+											li
+												a Rượu Chivas
+											li
+												a Hàng độc - Rượu độc đáo
+											li
+												a Johnnie Walker
+											li
+												a Rượu Whisky
+											li
+												a Rượu Remy Martin
+											li
+												a Rượu Glenmorangie
+									div.nav-column
+										h3 RƯỢU NGOẠI
+										ul
+											li
+												a Rượu Chivas
+											li
+												a Hàng độc - Rượu độc đáo
+											li
+												a Johnnie Walker
+											li
+												a Rượu Whisky
+											li
+												a Rượu Remy Martin
+											li
+												a Rượu Glenmorangie
+									div.nav-colum
+										img(src='../image/mega_menu_photo.jpg')
+									
+							li.nav-item
+								a.nav-link(href='#') RƯỢU TRẮNG
+							li.nav-item
+								a.nav-link(href='product_grid.html') CHAMPAGNE
+							li.nav-item
+								a.nav-link(href='#') THÔNG TIN
+							li.nav-item
+								a.nav-link(href='blog.html') BLOG
+							li.nav-item
+								a.nav-link(href='contact.html') LIÊN HỆ
+		div.container-fluid
+			.row
+				.winebody
+					.col-lg-3.left
+						img.left(src='../image/wine-left.jpg')
+					.col-lg-6.winebody-content
+						h1 GIỚI THIỆU
+						.winebody-content-line 
+							img(src='../image/title-dark.png')
+						.winebody-content_content 
+							| Mriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faciteorum claritatem. Investigtiones demonstraverunt lectores legere me lius quod ii legunt saepius.Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putam
+						.winebody-content_button 
+							a(href='../pug/introduce.html') XEM THÊM
+					.col-lg-3
+						img.right(src='../image/wine-right.jpg')
+		.container.winbody-center
+			.winebody_in
+				.container.row.content
+					.col-lg-8.winebody_in-left
+						img.img-responsive(src='../image/14.jpg')
+						.shape Sale
+					.col-lg-4.winebody_in-right
+						| RƯỢU NHO NĂM 1987
+						.winebody_in-line
+							img.img-responsive(src='../image/titleleft-dark.png') 
+						span.price 
+							| 330.000
+							sup đ
+						.winebody-content_price
+							a#add ADD TO CART
+						.winebody-content-sub
+							| Một hợp chất có trong rượu vang được gọi là resveratro còn có khả năng ngăn chật mật độ ôxy hóa của protein béo.
+						.winetable
+							.row.up
+								.col-lg-6.number.winetable-right 334 
+									.text NGÀY
+								.col-lg-6.number 26
+									.text GIỜ
+							.row.down
+								.col-lg-6.number.winetable-right 60
+									.text PHÚT
+								.col-lg-6.number 15
+									.text GIÂY
+		.container.winbody-product
+			.winebody-content-line
+				h1 SẢN PHẨM
+				img(src='../image/title-dark.png')
+			.row.winebody-product-show
+				.col-lg-3.producthover
+					i.turn.fas.fa-arrow-left
+					img#left(src='../image/1tren.jpg')
+					.descrip_product
+						i.fas.fa-heart.titlehover Yêu thích
+						i.fas.fa-chart-line.titlehover So Sánh
+						i.fas.fa-external-link-alt
+					.winebody-product-show-content RƯỢU VANG ĐÀ LẠT
+					.winebody-product-show-price 
+						span.price1 370.000 
+							sup đ
+						span.price2 - 450.000 
+							sup đ
+						.winebody-content_price ADD TO CART
+
+				.col-lg-3.producthover
+					img(src='../image/2tren.jpeg')
+					.descrip_product
+						i.fas.fa-heart.titlehover Yêu thích
+						i.fas.fa-chart-line.titlehover So Sánh
+						i.fas.fa-external-link-alt
+					.winebody-product-show-content RƯỢU VANG ĐÀ LẠT 
+					.winebody-product-show-price 
+						span.price1 370.000 
+							sup đ
+						span.price2 - 450.000 
+							sup đ
+						.winebody-content_price ADD TO CART
+				.col-lg-3.producthover
+					img#alone(src='../image/3tren.jpg')
+					.descrip_product
+						i.fas.fa-heart.titlehover Yêu thích
+						i.fas.fa-chart-line.titlehover So Sánh
+						i.fas.fa-external-link-alt
+					.winebody-product-show-content RƯỢU VANG ĐÀ LẠT 
+					.winebody-product-show-price 
+						span.price1 370.000 
+							sup đ
+						span.price2 - 450.000 
+							sup đ
+						.winebody-content_price ADD TO CART
+				.col-lg-3.producthover
+					img(src='../image/4-1.jpg')
+					.descrip_product
+						i.fas.fa-heart.titlehover Yêu thích
+						i.fas.fa-chart-line.titlehover So Sánh
+						i.fas.fa-external-link-alt
+					i.turn.fas.fa-arrow-right
+					.winebody-product-show-content RƯỢU VANG ĐÀ LẠT 
+					.winebody-product-show-price 
+						span.price1 370.000 
+							sup đ
+						span.price2 - 450.000 
+							sup đ
+						.winebody-content_price ADD TO CART
+		.container-fluid
+			.row.line1
+				.col-lg-3.media
+					a
+						img(src='../image/01_Home_02.jpg')
+					.text 1987
+						#dif RƯỢU
+				.col-lg-3.media
+					a
+						img(src='../image/01_Home_05.jpg')
+					.text 1987
+						#dif RƯỢU
+				.col-lg-3.media
+					a
+						img(src='../image/01_Home_04.jpg')
+					.text 1987
+						#dif RƯỢU
+				.col-lg-3.media
+					a
+						img(src='../image/01_Home_05.jpg')
+					.text 1987
+						#dif RƯỢU
+			.row.line2
+				.col-lg-3.media
+					a
+						img(src='../image/01_Home_08.jpg')
+					.text 1987
+						#dif RƯỢU
+				.col-lg-3.media
+					a
+						img(src='../image/01_Home_09.jpg')
+					.text 1987
+						#dif RƯỢU
+				.col-lg-3.media
+					a
+						img(src='../image/01_Home_10.jpg')
+					.text 1987
+						#dif RƯỢU
+				.col-lg-3.media
+					a
+						img(src='../image/01_Home_11.jpg')
+					.text 1987
+						#dif RƯỢU
+		.container.winbody-product
+			.winebody-content-line
+				h1 SẢN PHẨM BÁN CHẠY
+				img(src='../image/title-dark.png')
+			.row.winebody-product-show
+				.col-lg-3 
+					i.fas.fa-arrow-left
+					img.img-responsive(src='../image/4-1.jpg')
+					.winebody-product-show-content RƯỢU VANG ĐÀ LẠT
+					.winebody-product-show-price 
+						span.price1 370.000 
+							sup đ
+						span.price2 - 450.000 
+							sup đ
+						.winebody-content_price ADD TO CART
+
+				.col-lg-3 
+					img.img-responsive(src='../image/2duoi.jpg')
+					.winebody-product-show-content RƯỢU VANG ĐÀ LẠT 
+					.winebody-product-show-price 
+						span.price1 370.000 
+							sup đ
+						span.price2 - 450.000 
+							sup đ
+						.winebody-content_price ADD TO CART
+				.col-lg-3 
+					img.img-responsive#alone(src='../image/3duoi.jpg')
+					.winebody-product-show-content RƯỢU VANG ĐÀ LẠT 
+					.winebody-product-show-price 
+						span.price1 370.000 
+							sup đ
+						span.price2 - 450.000 
+							sup đ
+						.winebody-content_price ADD TO CART
+				.col-lg-3 
+					img.img-responsive(src='../image/2-4.jpg')
+					i.fas.fa-arrow-right
+					.winebody-product-show-content RƯỢU VANG ĐÀ LẠT 
+					.winebody-product-show-price 
+						span.price1 370.000 
+							sup đ
+						span.price2 - 450.000 
+							sup đ
+						.winebody-content_price ADD TO CART		
+		.container.info
+			.row
+				.col-lg-8
+					.info-blog-line
+						p TIN TỨC & BLOG
+						img(src='../image/title-dark.png')
+					.container.row.info-blog-content
+						.col-lg-6
+							img(src='../image/blog-content1.jpg')
+							.title
+								p.caption VANG THĂNG LONG CLASSIC
+								p.time Đăng bởi Nhat Linh| 01/19/2019| 60 Bình luận
+								p.des Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750 ml..
+								p.more Readmore
+						.col-lg-6
+							img(src='../image/blog-content2.jpg')
+							.title
+								p.caption VANG THĂNG LONG CLASSIC
+								p.time Đăng bởi Nhat Linh| 01/19/2019| 60 Bình luận
+								p.des Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750 ml..
+								p.more Readmore
+				.col-lg-4
+					.container.info-blog-line
+						p KHÁCH HÀNG
+						img(src='../image/title-dark.png')
+					.container.info-blog-content
+						p#quote.fas.fa-quote-right
+						p.des1  Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang nổ Thăng Long...
+						p.more1 Readmore...
+						p.ava
+							img.img-responsive(src='../image/ava.jpg')
+						p.name LINH NHN
+						P.job Graphic Design
+						P.circle 
+							i.id1.fas.fa-circle
+							i.id1.fas.fa-circle
+							i.id1.fas.fa-circle
+		//- footer
+		include ../include/footer

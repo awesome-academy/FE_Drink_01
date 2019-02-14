@@ -1,0 +1,66 @@
+html
+	include ../include/head
+	body
+		include ../include/header
+		.container.linkhead
+			a Trang chủ /
+			a.linkcontact(href='address.html') Địa chỉ
+			.linkhead-title
+				h1 LIÊN HỆ
+				img(src='../image/titleleft-dark.png')
+			.row.linkhead-content
+				.col-lg-8.map
+					iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7155984474075!2d108.21780861423223!3d16.080241488874133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183b8dc2697d%3A0xc105565d68b6ad90!2zMTYgTMO9IFRoxrDhu51uZyBLaeG7h3QsIFRo4bqhY2ggVGhhbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1547972531382', width='100%', height='350', frameborder='0', style='border:0', allowfullscreen='')
+				.col-lg-4.linkbody-title
+					p
+						img(src='../image/logo-light.jpg')
+					p.contact-4 
+						i.fas.fa-map-marker-alt 
+						a Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội 
+					p.contact-4 
+						i.i.fas.fa-phone
+						a (04) 6674 2332
+					p.contact-4
+						i.fas.fa-envelope  
+						a.Support support@milano.com
+					p.contact-4
+						p.follow FOLLOW US
+						.row.icon
+							.col-lg-1.iconshow
+								i.id.fab.fa-twitter
+							.col-lg-1.iconshow
+								i.id.fab.fa-google
+							.col-lg-1.iconshow
+								i.id.fab.fa-twitter
+							.col-lg-1.iconshow
+								i.id.fab.fa-twitter
+							.col-lg-1.iconshow
+								i.id.fab.fa-linkedin-in
+			.row.inputform
+				.col-lg-8
+					form.hihi
+						.row
+							.col.lg-3.titleinput 
+								| Your name
+							.col-lg-9.input1
+								input(type='text')
+						.row
+							.col.lg-3.titleinput
+								| Your name
+							.col-lg-9.input1
+								input(type='email')
+						.row
+							.col.lg-3.titleinput 
+								| Subject
+							.col-lg-9.input1
+								input(type='text')
+						.row
+							.col.lg-3.titleinput 
+								| Your Message
+							.col-lg-9#message
+								input(type='text')
+						.row
+							.col-lg-3
+							.col-lg-9.buttonsend
+								p GỬI
+		include ../include/footer

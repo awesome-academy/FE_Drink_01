@@ -1,0 +1,39 @@
+html
+	include ../include/head
+	body
+		include ../include/header
+		.container.linkhead
+			a Trang chủ /
+			a.linkcontact(href='#') Đăng nhập
+			.linkhead-title
+				.row
+					.col-lg-9
+						h1 ĐĂNG NHẬP
+						img.titlebottom(src='../image/titleleft-dark.png')
+					.col-lg-3
+						.buttonregis
+							a(href='register.html') ĐĂNG KÝ
+				.form
+					h1 KHÁCH HÀNG ĐĂNG NHẬP
+					p Nếu bạn có một tài khoản, vui lòng đăng nhập
+					form.loginform
+						.row
+							.col.lg-2.titleinput 
+								| Email *
+							.col-lg-10.input1
+								input(type='email', required='')
+						.row
+							.col.lg-2.titleinput
+								| Password *
+							.col-lg-10.input1
+								input(type='password',required='')
+						.row
+							.col-lg-2
+							.col-lg-10.titleinput 
+								input(type='checkbox', checked='checked', name='remember')
+								|  Quên mất khẩu
+						.row 
+							.col-lg-2
+							.col-lg-10.btlogin
+								button(href='index.html', type='submit') ĐĂNG NHẬP
+		include ../include/footer
