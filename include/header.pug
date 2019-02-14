@@ -1,0 +1,34 @@
+header#header
+	.header__menutop
+		.header__menutop__content
+			ul
+				include ../include/mixin-menutop
+	nav.navbar.navbar-expand-md.navbar-dark#header-menu
+		.container
+			a.navbar-brand(href='#')
+				img(src='../image/logo.jpg')
+			button.navbar-toggler(type='button' data-toggle='collapse' data-target='#myNavbar')
+				span.navbar-toggler-icon
+			#myNavbar.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li.nav-item
+						a.nav-link(href='index.html') TRANG CHỦ
+					li.nav-item#dropmenu
+						a.nav-link(href='redwine.html') RƯỢU VANG ĐỎ
+						div
+							- for(var i=0; i < 3; i++)
+								div.nav-column
+									h3 RƯỢU NGOẠI
+									ul
+										-var array=['Rượu Chivas','Hàng độc - Rượu độc đáo', 'Johnnie Walker','Rượu Whisky','Rượu Remy Martin','Rượu Glenmorangie']
+										each value in array
+											li
+												a= value
+					mixin list(src,name)
+						li.nav-item
+							a.nav-link(href= src)= name
+					+list('#','RƯỢU TRẮNG')
+					+list('product_grid.html',' CHAMPAGNE ')
+					+list('#','THÔNG TIN')
+					+list('blog.html','BLOG')
+					+list('contact.html','LIÊN HỆ')

@@ -1,0 +1,53 @@
+.container.branch
+	.row
+		-var array=["../image/br1.jpg","../image/br2.jpg","../image/br3.jpg"]
+		each val in array
+			.col-lg-4
+				p.br
+					img.img-responsive(src= val)
+.container
+	.row.contact
+		.col-lg-2
+			p.contact-1 THÔNG TIN
+			each val in ['VỀ CHÚNG TÔI', 'GIAO HÀNG', 'CẢM NGHĨ', 'LƯU TRỮ', 'CHÍNH SÁCH RIÊNG TƯ']
+				p.contact-2= val
+		.col-lg-3
+			p.contact-1 MUA HÀNG
+			each val in ['VẬN CHUYỂN VÀ TRẢ HÀNG', ' MUA HÀNG AN TOÀN', 'VẬN QUỐC TẾ', 'LIÊN KẾT', ' DỊCH VỤ GIẢM GIÁ']
+				p.contact-2= val
+		.col-lg-3
+			p.contact-1 GỬI EMAIL
+			p.contact-3 Liên hệ với chúng tôi để được hỗ trợ
+			form
+				input(type='text', name='name', placeholder='Enter your email')
+				a.button-send(href='#') GỬI
+			.row.icon
+				-var a= ["fa-twitter","fa-google","fa-twitter","fa-twitter","fa-linkedin-in"]
+				-for(var i=0; i< a.length; i++)
+					.col-lg-1.iconshow
+						i.id.fab(class= a[i])
+		.col-lg-4
+			p.contact-1 LIÊN HỆ
+			.contentcontact
+				p.contact-4 
+					i.fas.fa-map-marker-alt
+					a Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội
+				p.contact-4
+					-var array=['(04) 6674 2332 - ',' (04) 3768 8904']
+					each val in array
+						i.fas.fa-fax
+						a= val
+				p.contact-4 
+					i.fas.fa-fax 
+					a.phone (08) 6680 0668 - 
+					i.fas.fa-envelope  
+					a.Support  @bizweb.com.vn
+	hr
+.container
+	.row.footer
+		.col-lg-9.design
+			p &copy; Copyright 2008-2014 DKT Technology JSC
+		.col-lg-3
+			p
+				img(src='../image/footer1.jpg')
+	hr
