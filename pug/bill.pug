@@ -1,0 +1,71 @@
+html
+	include ../include/head
+	body
+		include ../include/header
+		.container.linkhead
+			a Trang chủ /
+			a.linkcontact(href='#') Danh sách đơn hàng
+			.linkhead-title
+				h1 ĐƠN HÀNG
+				img(src='../image/titleleft-dark.png')
+		.container.bill
+			.row
+				.col-lg-9
+					.row.bill-bill
+						p DANH SÁCH ĐƠN HÀNG
+					.row.bill-bill
+						-var array=['Trạng thái tất cả(16) |',' Đã hủy(10) |','Chưa duyệt(0) ','Đã thanh toán- chờ mua hàng |','Hàng đã về- chờ giao hàng (0) |','Đã kết thúc (6)']
+						each val in array
+							a= val
+					.row.bill-table
+						table#table1
+							tbody
+								tr
+									-var array=['STT','MÃ HÓA ĐƠN/ NGÀY MUA HÀNG','KHO NHẬN HÀNG','SỐ SP','TỔNG TIỀN','TÌNH TRẠNG','THAO TÁC']
+									each val in array
+										th= val
+								mixin table (stt)
+									tr
+										td= stt
+										td LEANHGIANG89 - 17/06/2016
+											p.table-time 01:36 14/09/2015
+										-var array=['HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết']
+										each val in array
+											td= val
+								+table('01')
+								+table('02')
+								+table('03')
+								+table('04')
+								+table('05')
+								+table('06')
+								tr.endbotom
+									td 07
+									td LEANHGIANG89 - 17/06/2016
+										p.table-time 01:36 14/09/2015
+									-var array=['HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết']
+									each val in array
+										td= val						
+				.col-lg-3.bill-info
+					h1 THÔNG TIN KHÁCH HÀNG
+					.row.bill-info-cus
+						.col-lg-1
+							i.fas.fa-user
+						.col-lg-5
+							| Giang Le
+							| anhgiangle98@gmail.com
+					.row.bill-info-cus
+						.col-lg-1
+							i.fas.fa-map-marker-alt
+						.col-lg-8
+							| Tòa nhà Hà Nội Group
+							| 442 Đội Cấn, Ba Đình, Hà Nội
+					.row.bill-info-cus
+						.col-lg-1
+							i.fas.fa-phone
+						.col-lg-7
+							| (04) 3768 9804
+					.row.bill-info-cus-dress
+						.col-lg-8 Chi tiết địa chỉ
+include ../include/footer
+
+			
