@@ -1,0 +1,187 @@
+html
+  include ../include/head
+  body
+    include ../include/header
+    .container.linkhead
+      a Trang chủ /
+      a.linkcontact(href='#') Địa chỉ
+      .linkhead-title
+        h1 ĐỊA CHỈ
+        img(src='../image/titleleft-dark.png')
+      .row
+        .col-lg-6
+          p ĐỊA CHỈ CỦA BẠN
+          form.loginform.form-address
+            .row
+              .col.lg-3.titleinput
+                | Tên
+              .col-lg-9.input1
+                input(type='text', required='', value='Giang' )
+            .row
+              .col.lg-3.titleinput
+                | Họ & tên đệm
+              .col-lg-9.input1
+                input(type='text', required='', value='Lê Ảnh' )
+            .row
+              .col.lg-3.titleinput
+                | Công ty
+              .col-lg-9.input1
+                input(type='text', required='', value='Cổ phần công nghệ DKT' )
+            .row
+              .col.lg-3.titleinput
+                | Địa chỉ
+              .col-lg-9.input1
+                input(type='text', required='', value='Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội' )
+            .row
+              .col.lg-3.titleinput
+                | Thành phố
+              .col-lg-9.input1
+                input(type='text', required='', value='Hà Nội' )
+            .row
+              .col.lg-3.titleinput
+                | Quốc Tịch
+              .col-lg-9.input1
+                input(type='text', required='', value='Việt Nam' )
+            .row
+              .col.lg-3.titleinput
+                | Postal/ Zip Code
+              .col-lg-9.input1
+                input(type='text', required='', value='2300089' )
+            .row
+              .col.lg-3.titleinput
+                | Phone
+              .col-lg-9.input1
+                input(type='text', required='', value='0974554928' )
+            .row
+              .col-lg-3
+              .col-lg-9
+                input(type='checkbox', checked='checked', name='remember')
+                | Đặt làm địa chỉ mặc định
+            .row
+              .col-lg-3
+              .col-lg-9
+                .row
+                  .col-lg-5
+                    button.button_edit(href='#') Chỉnh sửa địa chỉ
+                  .col-lg-7
+                    button(href='login.html', type='submit') XÓA
+          hr
+        .col-lg-6
+          a(href='#') Thêm địa chỉ
+          form.loginform.form-address.right
+            .row
+              .col.lg-3.titleinput
+                | Tên
+              .col-lg-9.input1
+                input(type='text', required='', value='Giang' )
+            .row
+              .col.lg-3.titleinput
+                | Họ & tên đệm
+              .col-lg-9.input1
+                input(type='text', required='', value='Lê Ảnh' )
+            .row
+              .col.lg-3.titleinput
+                | Công ty
+              .col-lg-9.input1
+                input(type='text', required='', value='Cổ phần công nghệ DKT' )
+            .row
+              .col.lg-3.titleinput
+                | Địa chỉ
+              .col-lg-9.input1
+                input(type='text', required='', value='Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội' )
+            .row
+              .col.lg-3.titleinput
+                | Thành phố
+              .col-lg-9.input1
+                input(type='text', required='', value='Hà Nội' )
+            .row
+              .col.lg-3.titleinput
+                | Quốc Tịch
+              .col-lg-9.input1
+                input(type='text', required='', value='Việt Nam' )
+            .row
+              .col.lg-3.titleinput
+                | Postal/ Zip Code
+              .col-lg-9.input1
+                input(type='text', required='', value='2300089' )
+            .row
+              .col.lg-3.titleinput
+                | Phone
+              .col-lg-9.input1
+                input(type='text', required='', value='0974554928' )
+            .row
+              .col-lg-3
+              .col-lg-9
+                input(type='checkbox', checked='checked', name='remember')
+                | Đặt làm địa chỉ mặc định
+            .row
+              .col-lg-3
+              .col-lg-9
+                .row
+                  .col-lg-5
+                    button.button_edit(href='#') Chỉnh sửa địa chỉ
+                  .col-lg-7
+                    button(href='login.html', type='submit') XÓA
+        .container.row.loginform.form-address.right
+          .col-lg-6
+            .row
+              .col-lg-3 Tên
+              .col-lg-9 Giang
+            .row
+              .col-lg-3 Họ & tên đệm
+              .col-lg-9 Lê Ảnh
+            .row
+              .col-lg-3 Công ty
+              .col-lg-9 Cổ phần công nghệ DKT
+            .row
+              .col-lg-3 Địa chỉ
+              .col-lg-9 Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội
+            .row
+              .col-lg-3 Thành phố
+              .col-lg-9 Hà Nội
+            .row
+              .col-lg-3 Quốc tịch
+              .col-lg-9 Việt Nam
+            .row
+              .col-lg-3 Postal/ Zip Code
+              .col-lg-9 2300089
+            .row
+              .col-lg-3 Phone
+              .col-lg-9 0974554678
+            .row
+              .col-lg-8
+              .col-lg-4
+                a(href='#') Chỉnh sửa địa chỉ
+            hr
+        .container.row.loginform.form-address.right
+          .col-lg-6
+            .row
+              .col-lg-3 Tên
+              .col-lg-9 Giang
+            .row
+              .col-lg-3 Họ & tên đệm
+              .col-lg-9 Lê Ảnh
+            .row
+              .col-lg-3 Công ty
+              .col-lg-9 Cổ phần công nghệ DKT
+            .row
+              .col-lg-3 Địa chỉ
+              .col-lg-9 Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội
+            .row
+              .col-lg-3 Thành phố
+              .col-lg-9 Hà Nội
+            .row
+              .col-lg-3 Quốc tịch
+              .col-lg-9 Việt Nam
+            .row
+              .col-lg-3 Postal/ Zip Code
+              .col-lg-9 2300089
+            .row
+              .col-lg-3 Phone
+              .col-lg-9 0974554678
+            .row
+              .col-lg-8
+              .col-lg-4
+                a(href='#') Chỉnh sửa địa chỉ
+include ../include/footer
+
