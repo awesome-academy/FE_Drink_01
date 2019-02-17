@@ -1,0 +1,80 @@
+html
+	include ../include/head
+
+	body
+		include ../include/header
+		.container.linkhead
+			a Trang chủ /
+			a.linkcontact(href='redwine.html') Rượu vang đỏ
+			img.img-reponsive.banner-product(src='../image/banner-grid.jpg')
+		.container
+			.row.product-grid
+				.col-lg-4
+					.linkhead-title
+						h1.FONT24.titlegrid DANH MỤC SẢN PHẨM
+						img(src='../image/titleleft-dark.png')
+				.col-lg-8.product-grid-right
+					.row
+						.col-lg-9.product-grid-number-right-a
+							mixin product-list(src)
+								a.gridlist(href= src)
+									i.fas(class!=attributes.class )
+							+product-list('product_grid.html')(class="fa-th")
+							+product-list('product_list.html')(class="fa-list")
+						.col-lg-3.product-grid-number-right-b
+							i.fas.fa-caret-left
+							each val in [1,2,3,4,5]
+								a=val
+							i(href='product_list.html').fas.fa-caret-right
+		.container
+			.row.product-grid-show
+				.col-lg-4
+					ul.product-grid-show-list
+						each val in ['RƯỢU NGOẠI', 'Rượu Chivas (16)', 'Hàng độc- Rượu độc đáo (36)', 'Johnnie Walker (46)', 'Rượu Whisky (24)',' Rượu Remy Martin (16)','Rượu Glenmorangie (11)','Rượu Ballantines (7)','Rượu Cognac (40)','Rượu Vodka (93)',' Rượu Macallan (19)','Rượu Brandy (62)','Rượu Hennessy (20)','Rượu Gin- Tequila- Rượu mùi (36)','Rượu Champange (12)','Rượu Single malt Scoth whisky (47)','Rượu Spirits (4)','RƯỢU VANG','Rượu Vang Pháp (44)','Rượu Vang Úc (24)','Rượu Vang Mỹ (16)', ' Rượu Vang ChiLe (48)','Rượu Vang Philip (1)','Rượu Vang Nam Phi (20)','Rượu Vang Ý (2)']
+							li= val
+					.linkhead-title.more-linkhead
+						h1.FONT24.titlegrid SO SÁNH SẢN PHẨM
+						img(src='../image/titleleft-dark.png')
+						p.desc-product Bạn chưa có sản phẩm nào để so sánh
+					.linkhead-title.more-linkhead
+						h1.FONT24.titlegrid TAG SẢN PHẨM
+						img(src='../image/titleleft-dark.png')
+					.container
+						.product-grid-tag
+							.row
+								each val in ['Túi','Phụ kiện','Đồng hồ']
+									a.tag=val
+							.row
+								each val in ['Giày','Sandal','Áo sơ mi','Nước hoa']
+									a.tag=val
+							.row
+								each val in ['Trẻ em','Thời trang nữ']
+									a.tag=val	
+					.imgproduct
+						img(src='../image/banner-right-product.jpg')
+				.col-lg-8
+					- for(var i=0; i < 3; i++)
+						.container.winbody-product.wineproduct
+							.row.winebody-product-show.winebody-product-des
+								-var array=["../image/1tren.jpg","../image/4-1.jpg","../image/3tren.jpg"]
+								each val in array
+									.col-lg-4.producthover.hoverproduct
+										img#left(src= val)
+										include ../include/descrip-product
+										.winebody-product-show-content RƯỢU VANG ĐÀ LẠT
+										.winebody-product-show-price 
+											span.price1 370.000 
+												sup đ
+											span.price2 - 450.000 
+												sup đ
+											.winebody-content_price ADD TO CART
+include ../include/footer
+
+
+
+
+
+
+
+			
+				
