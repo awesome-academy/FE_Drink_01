@@ -1,0 +1,45 @@
+html
+	include ../include/head
+	body
+		include ../include/header
+		.container.linkhead
+			a Trang chủ /
+			a.linkcontact(href='#') Đăng ký
+			.linkhead-title
+				.row
+					.col-lg-9
+						h1 ĐĂNG KÝ
+						img.titlebottom(src='../image/titleleft-dark.png')
+					.col-lg-3
+						.buttonregis
+							a(href='login.html') ĐĂNG NHẬP
+				.form
+					h1 THÔNG TIN KHÁCH HÀNG
+					form.loginform
+						mixin inputform(title,src)
+							.row
+								.col.lg-2.titleinput= title
+								.col-lg-10.input1
+									input(type=src, required='')
+						+inputform('Tên trước *','text')
+						+inputform('Tên sau *','text')
+						+inputform('Email *','email')
+						+inputform('Password *','password')
+						.row
+							.col-lg-2
+							.col-lg-10.titleinput 
+								input(type='checkbox', checked='checked', name='remember')
+								| Đăng ký nhận bản tin
+						mixin inputform(title,src)
+							.row
+								.col.lg-2.titleinput= title
+								.col-lg-10.input1
+									input(type=src, required='')
+						+inputform('Mật khẩu','password')
+						+inputform('Nhập lại mật khẩu','password')
+						.row 
+							.col-lg-9
+							.col-lg-3.btlogin
+								button(href='login.html', type='submit') ĐĂNG KÝ
+								button.comeback(href='index.html') QUAY LẠI
+		include ../include/footer
