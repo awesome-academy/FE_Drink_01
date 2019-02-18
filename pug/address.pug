@@ -1,0 +1,81 @@
+html
+  include ../include/head
+  body
+    include ../include/header
+    .container.linkhead
+      a Trang chủ /
+      a.linkcontact(href='#') Địa chỉ
+      .linkhead-title
+        h1 ĐỊA CHỈ
+        img(src='../image/titleleft-dark.png')
+      .row
+        .col-lg-6
+          p ĐỊA CHỈ CỦA BẠN
+          form.loginform.form-address
+            include ../include/mixin-address
+            +address('Tên','Giang')
+            +address('Họ & tên đệm','Lê Ảnh')
+            +address('Công ty','Cổ phần công nghệ DKT')
+            +address('Địa chỉ','Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội')
+            +address(' Thành phố','Hà Nội')
+            +address('Quốc Tịch','Việt Nam')
+            +address('Postal/ Zip Code','2300089')
+            +address('Phone','0906787878')
+            .row
+              .col-lg-3
+              .col-lg-9
+                input(type='checkbox', checked='checked', name='remember')
+                | Đặt làm địa chỉ mặc định
+            .row
+              .col-lg-3
+              .col-lg-9
+                .row
+                  .col-lg-5
+                    button.button_edit(href='#') Chỉnh sửa địa chỉ
+                  .col-lg-7
+                    button(href='login.html', type='submit') XÓA
+          hr
+        .col-lg-6
+          a(href='#') Thêm địa chỉ
+          form.loginform.form-address.right
+            include ../include/mixin-address
+            +address('Tên','Giang')
+            +address('Họ & tên đệm','Lê Ảnh')
+            +address('Công ty','Cổ phần công nghệ DKT')
+            +address('Địa chỉ','Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội')
+            +address('Thành phố','Hà Nội')
+            +address('Quốc Tịch','Việt Nam')
+            +address('Postal/ Zip Code','2300089')
+            +address('Phone','0905796931')
+            .row
+              .col-lg-3
+              .col-lg-9
+                input(type='checkbox', checked='checked', name='remember')
+                | Đặt làm địa chỉ mặc định
+            .row
+              .col-lg-3
+              .col-lg-9
+                .row
+                  .col-lg-5
+                    button.button_edit(href='#') Chỉnh sửa địa chỉ
+                  .col-lg-7
+                    button(href='login.html', type='submit') XÓA
+        -for(var i=0; i<2;i++) 
+          .container.row.loginform.form-address.right
+            .col-lg-6
+              include ../include/mixin-tableadd
+              +table-add('Tên','Giang')
+              +table-add('Họ & tên đệm','Lê Ảnh')
+              +table-add('Công ty','Cổ phần công nghệ DKT')
+              +table-add('Địa chỉ','Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội')
+              +table-add('Thành phố','Hà Nội')
+              +table-add('Quốc tịch','Việt Nam')
+              +table-add(' Postal/ Zip Code','2300089')
+              +table-add('Phone','0974554678')
+              .row
+                .col-lg-8
+                .col-lg-4
+                  a(href='#') Chỉnh sửa địa chỉ
+              hr
+include ../include/footer
+
