@@ -1,0 +1,25 @@
+html
+	include ../include/head
+	body
+		include ../include/header
+		.container.linkhead
+			a Trang chủ /
+			a.linkcontact(href='#') Blog
+			.linkhead-title
+				h1 BLOG
+				img(src='../image/titleleft-dark.png')
+			.container.info-blog-content
+				- for(var i=0; i < 3; i++)
+					.row
+						-var array=["../image/blog-content1.jpg","../image/blog-content2.jpg","../image/blog-content1.jpg"]
+						each val in array
+							.col-lg-4
+								img(src=val)
+								.title
+									-var a1=["caption","time","des"];
+									-var a2 =["VANG THĂNG LONG CLASSIC","Đăng bởi Nhat Linh| 01/19/2019| 60 Bình luận","Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750 ml.."];
+									-for (var i=0;i<a1.length;i++)
+										p(class=a1[i])= a2[i]
+									a(href='chitiet_blog.html').more Readmore
+include ../include/footer
+	
