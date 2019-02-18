@@ -1,0 +1,100 @@
+html
+	include ../include/head
+	body
+		include ../include/header
+		.container.linkhead
+			a Trang chủ / Sản phẩm /
+			a.linkcontact(href='redwine.html') Rượu vang đỏ
+			.row
+				.col-lg-2.choose
+					.row
+						i.up.fas.fa-arrow-up
+					-var array=["../image/03_Detail_03.jpg","../image/03_Detail_03.jpg","../image/03_Detail_06.jpg","../image/03_Detail_10.jpg","../image/03_Detail_03.jpg"]
+					each val in array
+						.row
+							img(src= val)
+					.row
+						i.up.fas.fa-arrow-down
+				.col-lg-5
+					img.img-reponsive(src='../image/03_Detail_main.jpg')
+				.col-lg-5
+					.linkhead-title
+						h1#FONT24 RƯỢU NHO NĂM 1987
+						img.img-responsive(src='../image/titleleft-dark.png')
+						.price1 330.000
+							sup đ
+						.vote
+							-for(var i=0; i<4;i++) 
+								i.fas.fa-star
+							i.fas.fa-star-half-alt
+							| 1 Review(S) | Add your review
+						.color MÀU SẮC
+						.phanomau
+							mixin choosecolor(id)
+								div(id= id)
+									i.fas.fa-square-full
+							+choosecolor('c1')
+							+choosecolor('c2')
+							+choosecolor('c3')
+						.dropdown
+							button.dropbtn
+								| Loại to
+								i.fas.fa-caret-down
+								.dropdown-content
+									a(href='#') Loại lớn
+									a(href='#') Loại nhỏ
+						.catelori SỐ LƯỢNG
+						.row.number
+							.col-lg-4 
+								.row.olala
+									mixin test(id, name)
+										div(class= id)
+											p= name
+									+test('col-lg-1 soluong ','-')
+									+test('col-lg-3 centerwhite ','3')
+									+test('col-lg-1 soluong ','+')
+							.col-lg-5
+								button(href='shoppingcart.html', type='submit') ADD TO CART
+						.row.description
+							mixin descript(title)
+								.col-lg-3
+									i.fas(class!=attributes.class)
+									a
+									a= title
+							+descript('Yêu thích')(class="fa-heart")
+							+descript('So sánh')(class="fa-chart-bar")
+							+descript('Email')(class="fa-envelope")
+						.catelori MÔ TẢ
+						.desc Một hợp chất có trong rượu vang được gọi là resveratro có khả năng răng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.
+						.descbottom
+							img(src='../image/mota.jpg')
+			.container.row
+				.col-lg-8
+					.row.reddesc
+						.col-lg-5.title ĐẶC ĐIỂM NỘI BẬT
+						.col-lg-3.title THÔNG TIN 
+						.col-lg-3.title ĐÁNH GIÁ
+					.row.reddesc-content.col-lg-12
+						-var array=[' Một hợp chất có trong rượu vang được gọi là resveratro có khả năng răng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.Một hợp chất có trong rượu vang được gọi là resveratro có khả năng răng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.Một hợp chất có trong rượu vang được gọi là resveratro có khả năng răng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.',' Một hợp chất có trong rượu vang được gọi là resveratro có khả năng răng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.Một hợp chất có trong rượu vang được gọi là resveratro có khả năng răng tối đa tuổi thọ.']
+						each val in array
+							p= val
+				.col-lg-4
+					.reddesc-right
+						a
+							img(src='../image/03_Detail_right.jpg')
+		.container.winbody-product
+			.winebody-content-line
+				h1 SẢN PHẨM BÁN CHẠY
+				img(src='../image/title-dark.png')
+			.row.winebody-product-show
+				-var array=["../image/4-1.jpg","../image/2duoi.jpg","../image/3duoi.jpg","../image/2-4.jpg"]
+				each val in array
+					.col-lg-3 
+						img.img-responsive(src= val)
+						.winebody-product-show-content RƯỢU VANG ĐÀ LẠT 
+						.winebody-product-show-price 
+							span.price1 370.000
+							span.price2 - 450.000 
+								sup đ
+							.winebody-content_price ADD TO CART
+include ../include/footer
